@@ -63,6 +63,12 @@ void drawCat() {
         width = 80;
         height = 24;
     }
+    if (width < 36 || height < 15)
+    {
+        std::cout << "Cat-Window: i won't fit in here!\nCat-Window: anyway, ";
+        return;
+    }
+
     height -= 3; // bcz input line
 
     std::string result = "";
